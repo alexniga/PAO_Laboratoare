@@ -29,7 +29,7 @@ public class CsvWriter {
 
     public void writeGunDetails(Game game) {
 
-        try (PrintWriter writer = new PrintWriter(new File("/Users/Niga/IdeaProjects/PROIECT_PARTEA1/src/proiectul1_etapa1/GunsHistoryDetails.csv"))) {
+        try (PrintWriter writer = new PrintWriter(new File("src/proiectul1_etapa1/GunsHistoryDetails.csv"))) {
             for (Gun gun : game.getHistoryOfWeapons().getWeaponsHistory()){
                 StringBuilder sb = new StringBuilder();
                 sb.append(String.valueOf(gun.getName()));
@@ -55,7 +55,7 @@ public class CsvWriter {
         }
     }
     public void writeGunStats(Game game) {
-        try (PrintWriter writer = new PrintWriter(new File("/Users/Niga/IdeaProjects/PROIECT_PARTEA1/src/proiectul1_etapa1/GunsHistoryStats.csv"))) {
+        try (PrintWriter writer = new PrintWriter(new File("src/proiectul1_etapa1/GunsHistoryStats.csv"))) {
             for (Gun gun : game.getHistoryOfWeapons().getWeaponsHistory()){
                 StringBuilder sb = new StringBuilder();
                 sb.append(String.valueOf(gun.getStats().getHighDistanceEnemy()));
@@ -75,7 +75,7 @@ public class CsvWriter {
         }
     }
     public void writeMelee(Game game) {
-        try (PrintWriter writer = new PrintWriter(new File("/Users/Niga/IdeaProjects/PROIECT_PARTEA1/src/proiectul1_etapa1/MeleeHistory.csv"))) {
+        try (PrintWriter writer = new PrintWriter(new File("src/proiectul1_etapa1/MeleeHistory.csv"))) {
 
             for (Melee melee : game.getHistoryOfMelees().getMeleesHistory()){
                 StringBuilder sb = new StringBuilder();
