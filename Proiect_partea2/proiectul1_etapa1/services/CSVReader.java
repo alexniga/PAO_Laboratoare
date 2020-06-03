@@ -36,7 +36,7 @@ public class CSVReader {
 
     public void readGunsStats(){
 
-        String csvFile = "/Users/Niga/IdeaProjects/PROIECT_PARTEA1/src/proiectul1_etapa1/GunsHistoryStats.csv";
+        String csvFile = "src/proiectul1_etapa1/GunsHistoryStats.csv";
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
@@ -71,7 +71,7 @@ public class CSVReader {
 
     public void readGunsDetails() {
 
-        String csvFile = "/Users/Niga/IdeaProjects/PROIECT_PARTEA1/src/proiectul1_etapa1/GunsHistoryDetails.csv";
+        String csvFile = "src/proiectul1_etapa1/GunsHistoryDetails.csv";
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
@@ -123,7 +123,7 @@ public class CSVReader {
 
     public void readMeleeStats(){
 
-        String csvFile = "/Users/Niga/IdeaProjects/PROIECT_PARTEA1/src/proiectul1_etapa1/MeleeHistory.csv";
+        String csvFile = "src/proiectul1_etapa1/MeleeHistory.csv";
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
